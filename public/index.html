@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="app_title">chat application</h1>
+    <div class="container">
+       
+            <div class="profile_name">
+                <span><i class="fa-regular fa-user"></i></span>
+                <input type="text" maxlength="20" id="user_name" class="user_name">
+            </div>
+            <ul class="message_content">
+                <div class="feedback">
+                    <p>ram is tiping</p>
+                </div>
+                
+            </ul>
+            
+            <form id="messageforn">
+                <input type="text" class="send_message">
+                <button type="submit">send <span><i class="fa-regular fa-paper-plane"></i></span></button>
+            </form>
+
+    </div>
+    <h3 class="clients_total" id="clients_total">total clients</h3>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
